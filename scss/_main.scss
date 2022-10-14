@@ -1,9 +1,16 @@
 .main {
+    overflow: hidden;
 
 
     &__container {}
 
-    &__column {}
+    &__column {
+        margin: 24px;
+        position: relative;
+        right: 680px;
+        display: flex;
+        column-gap: 24px;
+    }
 
     &__block {}
 
@@ -12,17 +19,19 @@
         align-items: center;
         display: flex;
         justify-content: center;
+        width: 872px;
+        height: 480px;
+        cursor: pointer;
 
         img {
-            margin: 24px;
             border-radius: 24px;
         }
     }
 
     &__up-text {
         position: absolute;
-        left: 270px;
-        top: 80px;
+        left: 70px;
+        top: 60px;
 
         font-weight: 700;
         font-size: 12px;
@@ -38,8 +47,8 @@
 
     &__title {
         position: absolute;
-        left: 270px;
-        top: 100px;
+        left: 70px;
+        top: 80px;
 
         font-weight: 700;
         font-size: 40px;
@@ -49,8 +58,8 @@
 
     &__text {
         position: absolute;
-        left: 270px;
-        top: 168px;
+        left: 70px;
+        top: 148px;
         width: 320px;
         font-weight: 400;
         font-size: 16px;
@@ -64,8 +73,8 @@
         display: flex;
         align-items: center;
         position: absolute;
-        left: 270px;
-        top: 268px;
+        left: 70px;
+        top: 258px;
 
         font-weight: 700;
         font-size: 24px;
@@ -88,8 +97,8 @@
         letter-spacing: 0.08em;
         text-transform: uppercase;
         color: #ECEFF4;
-        left: 270px;
-        top: 438px;
+        left: 70px;
+        top: 418px;
     }
 
     &__ellipse {
@@ -102,6 +111,7 @@
 }
 
 .game {
+    margin: 54px 0 107px 0;
     &__column {
         display: flex;
         column-gap: 24px;
@@ -109,7 +119,9 @@
     }
 
     &__block-1 {
-        margin: 0 0 137px 0;
+       
+
+        cursor: pointer;
 
         padding: 16px;
         width: 312px;
@@ -119,6 +131,8 @@
     }
 
     &__block-2 {
+        cursor: pointer;
+
         padding: 16px;
         width: 312px;
         height: 144px;
@@ -127,6 +141,8 @@
     }
 
     &__block-3 {
+        cursor: pointer;
+
         padding: 16px;
         width: 312px;
         height: 144px;
@@ -135,6 +151,8 @@
     }
 
     &__block-4 {
+        cursor: pointer;
+
         padding: 16px;
         width: 312px;
         height: 144px;

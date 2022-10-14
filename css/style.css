@@ -211,20 +211,33 @@ legend {
   opacity: 0.4;
 }
 
+.main {
+  overflow: hidden;
+}
+.main__column {
+  margin: 24px;
+  position: relative;
+  right: 680px;
+  display: flex;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
 .main__img {
   position: relative;
   align-items: center;
   display: flex;
   justify-content: center;
+  width: 872px;
+  height: 480px;
+  cursor: pointer;
 }
 .main__img img {
-  margin: 24px;
   border-radius: 24px;
 }
 .main__up-text {
   position: absolute;
-  left: 270px;
-  top: 80px;
+  left: 70px;
+  top: 60px;
   font-weight: 700;
   font-size: 12px;
   line-height: 12px;
@@ -235,8 +248,8 @@ legend {
 }
 .main__title {
   position: absolute;
-  left: 270px;
-  top: 100px;
+  left: 70px;
+  top: 80px;
   font-weight: 700;
   font-size: 40px;
   line-height: 48px;
@@ -244,8 +257,8 @@ legend {
 }
 .main__text {
   position: absolute;
-  left: 270px;
-  top: 168px;
+  left: 70px;
+  top: 148px;
   width: 320px;
   font-weight: 400;
   font-size: 16px;
@@ -257,8 +270,8 @@ legend {
   display: flex;
   align-items: center;
   position: absolute;
-  left: 270px;
-  top: 268px;
+  left: 70px;
+  top: 258px;
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
@@ -277,8 +290,8 @@ legend {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #ECEFF4;
-  left: 270px;
-  top: 438px;
+  left: 70px;
+  top: 418px;
 }
 .main__ellipse {
   margin: 0 8px 0 0;
@@ -288,13 +301,16 @@ legend {
   border-radius: 50%;
 }
 
+.game {
+  margin: 54px 0 107px 0;
+}
 .game__column {
   display: flex;
   -moz-column-gap: 24px;
        column-gap: 24px;
 }
 .game__block-1 {
-  margin: 0 0 137px 0;
+  cursor: pointer;
   padding: 16px;
   width: 312px;
   height: 144px;
@@ -302,6 +318,7 @@ legend {
   background-repeat: no-repeat;
 }
 .game__block-2 {
+  cursor: pointer;
   padding: 16px;
   width: 312px;
   height: 144px;
@@ -309,6 +326,7 @@ legend {
   background-repeat: no-repeat;
 }
 .game__block-3 {
+  cursor: pointer;
   padding: 16px;
   width: 312px;
   height: 144px;
@@ -316,6 +334,7 @@ legend {
   background-repeat: no-repeat;
 }
 .game__block-4 {
+  cursor: pointer;
   padding: 16px;
   width: 312px;
   height: 144px;
