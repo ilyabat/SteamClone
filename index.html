@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -76,10 +77,10 @@
             </div>
         </header>
         <main class="main">
-            <div class="main__container _container">
-                <div class="main__column">
-                    <div class="main__block">
-                        <div class="main__img">
+            <div class="main__container swiper mySwiper">
+                <div class="main__column swiper-wrapper">
+                    <div class="main__block swiper-slide ">
+                        <div class="main__img ">
                             <img src="./img/cyber/01.png" alt="cyber">
                             <div class="main__up-text">
                                 Pre-Purchase
@@ -91,7 +92,7 @@
                                 Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis
                                 obsessed with power, glamour and body modification.
                             </div>
-                            <div class="main__price">
+                            <div class="main__price con">
                                 <h2>$59.99</h2>
                                 <img src="./img/icon/Windows.svg" alt="Windows">
                             </div>
@@ -102,7 +103,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="main__block">
+                    <div class="main__block swiper-slide">
                         <div class="main__img">
                             <img src="./img/starwar/01.png" alt="starwar">
                             <div class="main__up-text">
@@ -126,7 +127,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="main__block">
+                    <div class="main__block swiper-slide">
                         <div class="main__img">
                             <img src="./img/death/01.png" alt="death">
                             <div class="main__up-text">
@@ -153,7 +154,7 @@
                 </div>
 
                 <div class="game">
-                    <div class="game__column">
+                    <div class="game__column _container">
                         <div class="game__block-1">
                             <div class="game__title">
                                 Borderlands 3
@@ -187,7 +188,7 @@
                                 $35.99<span>$59.99</span>
                             </div>
                         </div>
-                        <div class="game__block-4">
+                        <div class="game__block-4"> 
                             <div class="game__title">
                                 Wattam
                             </div>
@@ -203,6 +204,11 @@
             </div>
         </main>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="./js/main.js"></script>
+
+
 </body>
 
 </html>

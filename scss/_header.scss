@@ -15,13 +15,26 @@
         background: #171A21;
         margin: 0 0 0 5px;
         align-items: center;
+        cursor: pointer;
+        transition: all 0.2s ease-out;
+        &:hover{
+            color: #3969da;
+        }
+        
     }
     &__left {
         display: flex;
         align-items: center;
     }
 
-    &__logo {}
+    &__logo {
+       
+    }
+    @keyframes main__logo {
+        0% { fill: #49549E; }
+        75% { fill: #1bceb1; }
+        100% { fill: #1bce4f; }
+    }
 
     &__right {
         display: flex;
@@ -47,7 +60,13 @@
         a {
             color: #ECEFF4;
         }
+
+        transition: all 0.2s ease-out;
+        &:hover{
+            background: #3969da;
+        }
     }
+
 
     &__text {
         display: flex;
@@ -55,6 +74,11 @@
         a {
             color: #ECEFF4;
             margin: 0 0 0 24px;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+               color: #3969da;
+            }
         }
 
     }
@@ -84,8 +108,13 @@
 
     &__link {
         color: #ECEFF4;
-        margin: 0 24px 0 0
+        margin: 0 24px 0 0;
+        transition: all 0.2s ease-out;
+        &:hover{
+            color: #3b67cc;
+        }
     }
+   
 
     &__input {
         display: flex;

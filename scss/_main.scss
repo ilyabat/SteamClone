@@ -5,18 +5,22 @@
     &__container {}
 
     &__column {
-        margin: 24px;
+        margin: 50px 0 0 0;
         position: relative;
-        right: 680px;
         display: flex;
-        column-gap: 24px;
+        width: 100%;
+
     }
 
-    &__block {}
+    &__block {
+
+        display: flex;
+        justify-content: center;
+    }
 
     &__img {
         position: relative;
-        align-items: center;
+
         display: flex;
         justify-content: center;
         width: 872px;
@@ -112,15 +116,13 @@
 
 .game {
     margin: 54px 0 107px 0;
+
     &__column {
         display: flex;
         column-gap: 24px;
-
     }
 
     &__block-1 {
-       
-
         cursor: pointer;
 
         padding: 16px;
@@ -128,6 +130,12 @@
         height: 144px;
         background-image: url(../img/game/01.png);
         background-repeat: no-repeat;
+
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
     }
 
     &__block-2 {
@@ -138,6 +146,12 @@
         height: 144px;
         background-image: url(../img/game/02.png);
         background-repeat: no-repeat;
+
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
     }
 
     &__block-3 {
@@ -148,6 +162,12 @@
         height: 144px;
         background-image: url(../img/game/03.png);
         background-repeat: no-repeat;
+
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
     }
 
     &__block-4 {
@@ -158,6 +178,12 @@
         height: 144px;
         background-image: url(../img/game/04.png);
         background-repeat: no-repeat;
+
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
     }
 
     &__title {
@@ -193,4 +219,20 @@
             opacity: 0.4;
         }
     }
+}
+
+
+.swiper-slide-active .main__img {
+    transform: scale(1.1); 
+    transition: transform .2s ease;
+}
+.swiper-slide-next .main__img{
+    opacity: 0.2;
+}
+.swiper-slide-prev .main__img{
+    opacity: 0.2;
+}
+.swiper-slide .con {
+    transform: scale(1);
+    transition: transform .2s ease;
 }
